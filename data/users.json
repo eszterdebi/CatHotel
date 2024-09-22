@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "fullName": "John Doe",
+    "birthDate": {
+      "year": 2000,
+      "month": 1,
+      "day": 1
+    },
+    "phone": "+36701234567",
+    "email": "example@example.com",
+    "password": "qwepoi123",
+    "address": "Sugar Street 1.",
+    "address2": "1/3",
+    "country": "Hungary",
+    "zip": "3700",
+    "city": "Goodcity"
+  },
+  {
+    "id": 20051,
+    "fullName": "Debreceni Eszter",
+    "birthDate": {
+      "year": "2001",
+      "month": "8",
+      "day": "24"
+    },
+    "phone": "+36704567891",
+    "email": "esztidebreceni@gmail.com",
+    "password": "Koki15",
+    "address": "Cica utca 21.",
+    "address2": "F/1",
+    "country": "Magyarország",
+    "zip": "7623",
+    "city": "Pécs"
+  },
+  {
+    "id": 29723,
+    "fullName": "Kiss Anna",
+    "birthDate": {
+      "year": "1984",
+      "month": "11",
+      "day": "26"
+    },
+    "phone": "+37201112233",
+    "email": "annakiss@freemail.hu",
+    "password": "SzeretemAcicat84",
+    "address": "Pécs utca 12.",
+    "address2": "B épület",
+    "country": "Magyarország",
+    "zip": "7621",
+    "city": "Pécs"
+  },
+  {
+    "id": 38729,
+    "fullName": "Nagy Lajos",
+    "birthDate": {
+      "year": "1976",
+      "month": "3",
+      "day": "12"
+    },
+    "phone": "+36209876543",
+    "email": "nagylajos@yahoo.com",
+    "password": "qsCUJm951",
+    "address": "Virág út 4.",
+    "address2": "",
+    "country": "Magyarország",
+    "zip": "7451",
+    "city": "Kaposvár"
+  }
+]

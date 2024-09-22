@@ -1,0 +1,163 @@
+[
+  {
+    "userId": "1",
+    "bookingId": 8037,
+    "arrivalDate": "2024-05-06",
+    "departureDate": "2024-05-08",
+    "catName": "Kókusz",
+    "catBreed": "Brit",
+    "catBirthDate": "2015",
+    "catGender": "Hím",
+    "catNeutered": "Igen",
+    "catExtraInfo": "Cuki",
+    "extraServices": [
+      {
+        "id": "1",
+        "price": 500
+      },
+      {
+        "id": "4",
+        "price": 450
+      },
+      {
+        "id": "6",
+        "price": 1000
+      },
+      {
+        "id": "7",
+        "price": 3500
+      },
+      {
+        "id": "8",
+        "price": 600
+      }
+    ],
+    "amountToPay": "21450 HUF"
+  },
+  {
+    "userId": "1",
+    "bookingId": 18447,
+    "arrivalDate": "2024-05-20",
+    "departureDate": "2024-05-25",
+    "catName": "Kormi",
+    "catBreed": "Házi",
+    "catBirthDate": "2019",
+    "catGender": "Nőstény",
+    "catNeutered": "Igen",
+    "catExtraInfo": "Fekete",
+    "extraServices": [
+      {
+        "id": "3",
+        "price": 1500
+      },
+      {
+        "id": "6",
+        "price": 1000
+      },
+      {
+        "id": "7",
+        "price": 3500
+      },
+      {
+        "id": "10",
+        "price": 1700
+      }
+    ],
+    "amountToPay": "42200 HUF"
+  },
+  {
+    "userId": "20051",
+    "bookingId": 42226,
+    "arrivalDate": "2024-05-13",
+    "departureDate": "2024-05-15",
+    "catName": "Kókusz",
+    "catBreed": "Brit rövidszőrű",
+    "catBirthDate": "2015",
+    "catGender": "Hím",
+    "catNeutered": "Igen",
+    "catExtraInfo": "Sokat alszik, sokat eszik, de nagyon aranyos.",
+    "extraServices": [
+      {
+        "id": "1",
+        "price": 500
+      },
+      {
+        "id": "4",
+        "price": 450
+      },
+      {
+        "id": "6",
+        "price": 1000
+      },
+      {
+        "id": "7",
+        "price": 3500
+      },
+      {
+        "id": "8",
+        "price": 600
+      }
+    ],
+    "amountToPay": "21450 HUF"
+  },
+  {
+    "userId": "29723",
+    "bookingId": 4903,
+    "arrivalDate": "2024-07-15",
+    "departureDate": "2024-07-21",
+    "catName": "Kandúr",
+    "catBreed": "Házi macska",
+    "catBirthDate": "2020",
+    "catGender": "Hím",
+    "catNeutered": "Igen",
+    "catExtraInfo": "",
+    "extraServices": [
+      {
+        "id": "2",
+        "price": 2000
+      },
+      {
+        "id": "5",
+        "price": 950
+      }
+    ],
+    "amountToPay": "52150 HUF"
+  },
+  {
+    "userId": "29723",
+    "bookingId": 4218,
+    "arrivalDate": "2024-07-15",
+    "departureDate": "2024-07-21",
+    "catName": "Puhapraclicicus",
+    "catBreed": "Házi macska",
+    "catBirthDate": "2021",
+    "catGender": "Nőstény",
+    "catNeutered": "Igen",
+    "catExtraInfo": "Mindenhová követi Kandúrt.",
+    "extraServices": [
+      {
+        "id": "2",
+        "price": 2000
+      },
+      {
+        "id": "4",
+        "price": 450
+      }
+    ],
+    "amountToPay": "48650 HUF"
+  },
+  {
+    "userId": "38729",
+    "bookingId": 8874,
+    "arrivalDate": "2024-05-31",
+    "departureDate": "2024-06-02",
+    "catName": "Kormi",
+    "catBreed": "Házi macska",
+    "catBirthDate": "2018",
+    "catGender": "Nőstény",
+    "catNeutered": "Nem",
+    "catExtraInfo": "",
+    "extraServices": [],
+    "amountToPay": "13500 HUF"
+  }
+]

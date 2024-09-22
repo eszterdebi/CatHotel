@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>Profil módosítás</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Old+Standard+TT:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+  <script src="js/modernizr.js"></script>
+</head>
+
+<body>
+    <section class="backToMain d-flex justify-content-end mt-4 me-4">
+        <div class="btn-box">
+            <a href="index.html" class="btn btn-arrow btn-pill btn-medium btn-outline-dark bg-light text-black">
+              <span>Vissza a főoldalra<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8"
+                  enable-background="new 0 0 36.1 25.8" xml:space="preserve">
+                  <g>
+                    <line fill="none" stroke="#111111" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9"
+                      x2="34" y2="12.9"></line>
+                    <polyline fill="none" stroke="#111111" stroke-width="3" stroke-miterlimit="10"
+                      points="22.2,1.1 34,12.9 22.2,24.7   "></polyline>
+                  </g>
+                </svg></span>
+            </a>
+          </div>
+    </section>
+
+    <section id="myPage" class="padding-large pt-1">
+        <div class="container">
+            <h2 class="display-5 text-capitalize mb-4">Profil módosítása</h2>
+            <div class="row align-items-md-stretch">
+                <div class="col-md-4">
+                    <div class="h-100 p-5 bg-gray-100 rounded-3">
+                        <h2 class="d-flex justify-content-center mb-4 text-center" id="fullName">Teljes név</h2>
+                        <div class="d-flex justify-content-center mb-4">
+                            <img id="selectedAvatar" src="https://mdbootstrap.com/img/Photos/Others/placeholder-avatar.jpg"
+                            class="rounded-circle" style="width: 200px; height: 200px; object-fit: cover;" alt="example placeholder" />
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <div data-mdb-button-init data-mdb-ripple-init class="btn btn-arrow btn-pill btn-small btn-dark mb-5">
+                                <label class="form-label text-white m-1 upload-pic" for="fileUpload">Tölts fel egy képet</label>
+                                <input type="file" class="form-control d-none" id="fileUpload" onchange="displaySelectedImage()" />
+                            </div>
+                        </div>
+
+                        <div class="list-group">
+                            <a href="mypage.html" class="list-group-item list-group-item-action bg-gray-100">Profilom</a>
+                            <a href="mybooking.html" class="list-group-item list-group-item-action bg-gray-100">Foglalásaim</a>
+                            <a href="mypage_change.html" class="list-group-item list-group-item-action list-group-item-purple active" aria-current="true">
+                                Profil módosítása
+                            </a>
+                            <a href="booking_new.html" class="list-group-item list-group-item-action bg-gray-100">Új foglalás</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="h-100 p-5 bg-gray-100 rounded-3">
+                            <div class="container">
+                                <h2 class="display-5 text-capitalize mb-4">Adatok módosítása</h2>
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="inputName" class="form-label">Teljes név</label>
+                                        <input type="text" class="form-control" id="inputName">
+                                    </div>
+                                    <div class="col-md-6 dateSelect">
+                                        <label for="inputBirthDate" class="form-label">Születési idő</label>
+                                        <div class="row g-3">
+                                            <div class="col">
+                                                <select id="birthYear" class="form-select customSelect" aria-label="Default select example">
+                                                    <option selected>Év</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <select id="birthMonth" class="form-select customSelect" aria-label="Default select example">
+                                                    <option selected>Hónap</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <select id="birthDay" class="form-select customSelect" aria-label="Default select example">
+                                                    <option selected>Nap</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputPhone" class="form-label">Telefonszám</label>
+                                        <input type="text" class="form-control" id="inputPhone">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputEmail" class="form-label">Email cím</label>
+                                        <input type="email" class="form-control" id="inputEmail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputPassword" class="form-label">Új jelszó</label>
+                                        <input type="password" class="form-control" id="inputPassword">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputPassword2" class="form-label">Új jelszó megismétlése</label>
+                                        <input type="password" class="form-control" id="inputPassword2">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="inputAddress" class="form-label">Lakcím</label>
+                                        <input type="text" class="form-control" id="inputAddress" placeholder="Utca, házszám">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="inputAddress2" class="form-label">Lakcím 2</label>
+                                        <input type="text" class="form-control" id="inputAddress2" placeholder="Épület, emelet, ajtó, stb.">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="inputCountry" class="form-label">Ország</label>
+                                        <input type="text" class="form-control" id="inputCountry">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="inputZip" class="form-label">Irányítószám</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputCity" class="form-label">Város</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputOldPassword" class="form-label">Jelszó*</label>
+                                        <input type="password" class="form-control" id="inputOldPassword">
+                                    </div>
+                                    <div class="btn-modify mt-5 d-flex position-relative">
+                                        <button type="submit" class="btn btn-arrow btn-pill btn-medium btn-dark position-relative">
+                                            <span>Módosítás<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8"
+                                              enable-background="new 0 0 36.1 25.8" xml:space="preserve">
+                                                <g>
+                                                    <line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9"
+                                                        x2="34" y2="12.9"></line>
+                                                    <polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10"
+                                                        points="22.2,1.1 34,12.9 22.2,24.7   ">
+                                                    </polyline>
+                                                </g>
+                                            </svg>
+                                            </span>
+                                        </button>
+                                        <div id="passwordErrorAlert" class="alert alert-danger col-md-7 offset-md-1 position-absolute top-0 start-50 translate-middle-x" role="alert" style="display: none;">
+                                            <strong>Hiba:</strong> A két új jelszó nem egyezik!
+                                        </div>
+                                        <div id="oldPasswordErrorAlert" class="alert alert-danger col-md-7 offset-md-1 position-absolute top-0 start-50 translate-middle-x" role="alert" style="display: none;">
+                                            <strong>Hiba:</strong> Nem jó jelszót adott meg!
+                                        </div>
+                                        <div id="emailErrorAlert" class="alert alert-danger col-md-7 offset-md-1 position-absolute top-0 start-50 translate-middle-x" role="alert" style="display: none;">
+                                            <strong>Hiba:</strong> A megadott email cím mág foglalt!
+                                        </div>
+                                        <div id="successAlert" class="alert alert-success col-md-7 offset-md-1 position-absolute top-0 start-50 translate-middle-x" role="alert" style="display: none;">
+                                            <strong>Sikeres módosítás!</strong>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="node_modules/js-cookie/dist/js.cookie.js"></script>
+    <script type="text/javascript" src="js/mypage-change.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script type="text/javascript" src="js/upload.js"></script>
+
+</body>
+

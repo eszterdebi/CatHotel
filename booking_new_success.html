@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>Foglalás</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Old+Standard+TT:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+  <script src="js/modernizr.js"></script>
+</head>
+
+<body>
+    <section class="backToMain d-flex justify-content-end mt-4 me-4">
+        <div class="btn-box">
+            <a href="index.html" class="btn btn-arrow btn-pill btn-medium btn-outline-dark bg-light text-black">
+              <span>Vissza a főoldalra<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8"
+                  enable-background="new 0 0 36.1 25.8" xml:space="preserve">
+                  <g>
+                    <line fill="none" stroke="#111111" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9"
+                      x2="34" y2="12.9"></line>
+                    <polyline fill="none" stroke="#111111" stroke-width="3" stroke-miterlimit="10"
+                      points="22.2,1.1 34,12.9 22.2,24.7   "></polyline>
+                  </g>
+                </svg></span>
+            </a>
+          </div>
+    </section>
+
+    <section id="myPage" class="padding-large pt-1">
+        <div class="container">
+            <h2 class="display-5 text-capitalize mb-4">Új foglalás</h2>
+            <div class="row align-items-md-stretch">
+                <div class="col-md-4">
+                    <div class="h-100 p-5 bg-gray-100 rounded-3">
+                        <h2 class="d-flex justify-content-center mb-4 text-center" id="fullName">Teljes név</h2>
+                        <div class="d-flex justify-content-center mb-4">
+                            <img id="selectedAvatar" src="https://mdbootstrap.com/img/Photos/Others/placeholder-avatar.jpg"
+                            class="rounded-circle" style="width: 200px; height: 200px; object-fit: cover;" alt="example placeholder" />
+                        </div>
+                        <div class="list-group">
+                            <a href="mypage.html" class="list-group-item list-group-item-action bg-gray-100">Profilom</a>
+                            <a href="mybooking.html" class="list-group-item list-group-item-action bg-gray-100">Foglalásaim</a>
+                            <a href="mypage_change.html" class="list-group-item list-group-item-action bg-gray-100">Profil módosítása</a>
+                            <a href="booking_new.html" class="list-group-item list-group-item-action list-group-item-purple active" aria-current="true">
+                                Új foglalás
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="h-100 p-5 bg-gray-100 rounded-3">
+                            <div class="container">
+                                <h2 class="display-5 text-capitalize mb-4">Foglalás</h2>
+                                <form class="row g-3">
+                                    <div class="booking-item" style="width: calc(50% - 20px);">
+                                        <label for="date-in" class="text-uppercase d-block">Érkezés*</label>
+                                        <input type="date" id="select-arrival-date">
+                                    </div>
+                                    <div class="booking-item" style="width: calc(50% - 20px);">
+                                        <label for="date-in" class="text-uppercase d-block">Távozás*</label>
+                                        <input type="date" id="select-departure-date">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputCatName" class="form-label">Cica neve*</label>
+                                        <input type="text" class="form-control" id="inputName">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputCatBreed" class="form-label">Cica fajtája*</label>
+                                        <input type="text" class="form-control" id="inputCatBreed">
+                                    </div>
+                                    <div class="col-md-6 dateSelect">
+                                        
+                                        <div class="row g-3">
+                                            <div class="col">
+                                                <label for="inputCatBirthDate" class="form-label">Születési év*</label>
+                                                <select id="inputCatBirthDate" class="form-select customSelect" aria-label="Default select example">
+                                                    <option selected>-</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <label for="inputCatGender" class="form-label">Nem*</label>
+                                                <select id="inputCatGender" class="form-select customSelect" aria-label="Default select example">
+                                                    <option selected>-</option>
+                                                    <option>Hím</option>
+                                                    <option>Nőstény</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <label for="inputCatNeutered" class="form-label">Ivartalanított*</label>
+                                                <select id="inputCatNeutered" class="form-select customSelect" aria-label="Default select example">
+                                                    <option selected>-</option>
+                                                    <option>Igen</option>
+                                                    <option>Nem</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label for="inputCatExtraInfo" class="form-label">Megjegyzés</label>
+                                            <textarea class="form-control" id="inputCatExtraInfo" rows="3" placeholder="Betegség, rendszeres gyószer szedés, allergia, viselkedés, stb..."></textarea>
+                                          </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <h4 class="mb-4 col-md-4">Extra szolgáltatások</h4>
+                                            <p class="col-md-6">(További részletek a főoldalon)</p>
+                                        </div>
+                                        <div class="row ms-2 mb-3">
+                                            <div class="form-check col-md-3">
+                                                <input class="form-check-input" type="checkbox" value="1" id="checkDryWetFood">
+                                                <label class="form-check-label" for="checkdryWetFood">
+                                                    Száraz+nedves táp
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-3">
+                                                <input class="form-check-input" type="checkbox" value="2" id="checkFishDiet">
+                                                <label class="form-check-label" for="checkFishDiet">
+                                                    Halas diéta
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-3">
+                                                <input class="form-check-input" type="checkbox" value="3" id="checkRawMeatDiet">
+                                                <label class="form-check-label" for="checkRawMeatDiet">
+                                                    Nyers hús diéta
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-3 mb-3">
+                                                <input class="form-check-input" type="checkbox" value="4" id="checkCatMilk">
+                                                <label class="form-check-label" for="checkCatMilk">
+                                                    Cicatej
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-3">
+                                                <input class="form-check-input" type="checkbox" value="5" id="checkCatnipTea">
+                                                <label class="form-check-label" for="checkCatnipTea">
+                                                    Macskamentás tea
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-3">
+                                                <input class="form-check-input" type="checkbox" value="6" id="checkBrush">
+                                                <label class="form-check-label" for="checkBrush">
+                                                    Fésülés
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-3">
+                                                <input class="form-check-input" type="checkbox" value="7" id="checkBath">
+                                                <label class="form-check-label" for="checkBath">
+                                                    Fürdetés
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-3 mb-3">
+                                                <input class="form-check-input" type="checkbox" value="8" id="checkClawCut">
+                                                <label class="form-check-label" for="checkClawCut">
+                                                    Karomvágás
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-3">
+                                                <input class="form-check-input" type="checkbox" value="9" id="checkDoctor">
+                                                <label class="form-check-label" for="checkDoctor">
+                                                    Általános orvosi vizsgálat
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-3">
+                                                <input class="form-check-input" type="checkbox" value="10" id="checkFleaControl">
+                                                <label class="form-check-label" for="checkFleaControl">
+                                                    Bolhairtás
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-3">
+                                                <input class="form-check-input" type="checkbox" value="11" id="checkDeworming">
+                                                <label class="form-check-label" for="checkDeworming">
+                                                    Féregtelenítés
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-3 mb-3">
+                                                <input class="form-check-input" type="checkbox" value="12" id="checkVaccinationAgainstRabies">
+                                                <label class="form-check-label" for="checkVaccinationAgainstRabies">
+                                                    Veszettség elleni oltás
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-3">
+                                                <input class="form-check-input" type="checkbox" value="13" id="checkCombinedVaccination">
+                                                <label class="form-check-label" for="checkCombinedVaccination">
+                                                    Kombinált oltás
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-3">
+                                                <input class="form-check-input" type="checkbox" value="14" id="checkBothVaccination">
+                                                <label class="form-check-label" for="checkBothVaccination">
+                                                    Veszettség+kombinált oltás
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <h3 class="reserve-data">Végösszeg</h3>
+                                        <div id="amountToPay">0 HUF</div>
+                                    </div>
+                                    <div class="btn-reserve mt-5 d-flex position-relative">
+                                        <button type="submit" class="btn btn-arrow btn-pill btn-medium btn-dark position-relative">
+                                            <span>Foglalás<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8"
+                                              enable-background="new 0 0 36.1 25.8" xml:space="preserve">
+                                                <g>
+                                                    <line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9"
+                                                        x2="34" y2="12.9"></line>
+                                                    <polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10"
+                                                        points="22.2,1.1 34,12.9 22.2,24.7   ">
+                                                    </polyline>
+                                                </g>
+                                            </svg>
+                                            </span>
+                                        </button>
+                                        <div id="validateErrorAlert" class="alert alert-danger col-md-7 offset-md-1 position-absolute top-0 start-50 translate-middle-x" role="alert" style="display: none;">
+                                            <strong>Hiba:</strong> Kérem töltse ki az összes csillaggal jelölt mezőt!
+                                        </div>
+                                        <div id="dateErrorAlert" class="alert alert-danger col-md-8 offset-md-1 position-absolute top-0 start-50 translate-middle-x" role="alert" style="display: none;">
+                                            <strong>Hiba:</strong> A távozás dátuma nem lehet az érkezésnél korábbi!
+                                        </div>
+                                        <div id="successAlert" class="alert alert-success col-md-7 offset-md-1 position-absolute top-0 start-50 translate-middle-x" role="alert" style="display: block;">
+                                            <strong>Sikeres Foglalás!</strong>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="node_modules/js-cookie/dist/js.cookie.js"></script>
+    <script type="text/javascript" src="js/booking-new.js"></script>
+    <script type="text/javascript" src="js/booking-new-success.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
